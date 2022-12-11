@@ -1,11 +1,6 @@
 import math
-from typing import Union
 
-import numpy as np
-
-Number = Union[int, float, complex, np.number]
-EPS = 2 ** (-53)
-DEFAULT_STEP_OF_NUMERICAL_DIFFERENTIATION = 1e-10
+from misc import Number, DEFAULT_STEP_OF_NUMERICAL_DIFFERENTIATION, EPS
 
 
 def get_optimal_step_of_numerical_differentiation(m0: Number = None, m2: Number = None, eps: Number = EPS) -> Number:

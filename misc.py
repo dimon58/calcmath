@@ -1,4 +1,12 @@
+from typing import Union
+
 import numpy as np
+
+Number = Union[int, float, complex, np.number]
+
+# Машинная точность
+EPS = 2 ** (-53)
+DEFAULT_STEP_OF_NUMERICAL_DIFFERENTIATION = 1e-10
 
 
 def ensure_square_matrix(a: np.ndarray):
