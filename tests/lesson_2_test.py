@@ -41,19 +41,19 @@ class TestNorm(unittest.TestCase):
 
     def test_vector_norm_1(self):
         self.assertAlmostEqual(
-            lesson_2.get_matrix_norm_1(np.array([1, 2, 3])), 3,
+            lesson_2.get_vector_norm_1(np.array([1, 2, 3])), 3,
             msg="Ошибка вычисления векторной нормы 1"
         )
 
     def test_vector_norm_2(self):
         self.assertAlmostEqual(
-            lesson_2.get_matrix_norm_2(np.array([1, 2, 3])), 6,
+            lesson_2.get_vector_norm_2(np.array([1, 2, 3])), 6,
             msg="Ошибка вычисления векторной нормы 2"
         )
 
     def test_vector_norm_3(self):
         self.assertAlmostEqual(
-            lesson_2.get_matrix_norm_3(np.array([1, 2, 3])), 3.7416573867739413,
+            lesson_2.get_vector_norm_3(np.array([1, 2, 3])), 3.7416573867739413,
             msg="Ошибка вычисления векторной нормы 3"
         )
 

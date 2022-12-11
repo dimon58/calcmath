@@ -17,6 +17,12 @@ def ensure_square_matrix(a: np.ndarray):
 
 
 def ensure_correct_slae(a: np.ndarray, f: np.ndarray):
+    """
+    Проверяет, правильные ли размеры матриц в системе уравнений. Если нет, то вызывает исключение ValueError
+    Args:
+        a: матрица СЛАУ
+        f: свободный коэффициент
+    """
     ensure_square_matrix(a)
 
     if len(f.shape) != 1:
