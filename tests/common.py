@@ -67,7 +67,7 @@ class SLAETestCaseMixin:
             x = np.array([1., 2., 3.]).T
 
             f = a @ x
-            print(f)
+
             np.testing.assert_almost_equal(solver_function(a, f), x, err_msg=f'{solver_name} неправильно решает СЛАУ')
 
     def __test_random_slae(self, solver_name, solver_function):
