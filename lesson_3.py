@@ -121,7 +121,7 @@ if __name__ == '__main__':
     iters = 700
     np.random.seed(32832)
     a = np.random.random((k, k))
-    d = np.diag(np.diag(a)) * 19
+    d = np.diag(np.diag(a)) * 19  # при 18.95 интересно
     a -= d
     a += np.eye(*a.shape)
 
